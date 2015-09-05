@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('lastFm')
+    .module('popcorn')
     .constant('malarkey', malarkey)
     .constant('toastr', toastr)
     .constant('moment', moment);

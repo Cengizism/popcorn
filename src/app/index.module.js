@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('lastFm', ['ngRoute', 'ngMaterial']);
+    .module('popcorn', ['ngRoute', 'ngMaterial']);
 
 })();

@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('lastFm')
+    .module('popcorn')
     .directive('acmeMalarkey', acmeMalarkey);
 
   /** @ngInject */

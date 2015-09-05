@@ -4,29 +4,22 @@
       <acme-navbar />
     </header>
 
-    <!-- <md-card>
-      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-      <md-card-content>
-        <h2 class="md-title">Paracosm</h2>
-        <p>
-          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-        </p>
-      </md-card-content>
-    </md-card> -->
-
-
-    <div ng-controller="gridListDemoCtrl as vm" flex class="gridListdemoDynamicTiles">
+    <div flex class="grid">
       <md-grid-list
             md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6"
             md-row-height-gt-md="1:1" md-row-height="4:3"
             md-gutter="8px" md-gutter-gt-sm="4px" >
-        <md-grid-tile ng-repeat="tile in vm.tiles"
+        <md-grid-tile ng-repeat="tile in tiles"
                       md-rowspan="{{tile.span.row}}"
                       md-colspan="{{tile.span.col}}"
                       md-colspan-sm="1"
-                      ng-class="tile.background">
-          <md-grid-tile-footer><h3>{{tile.title}}</h3></md-grid-tile-footer>
+                      ng-class="tile.background"
+                      ng-click="open(tile)">
+            <md-card-content>
+              <h2 class="md-title">{{tile.title}}</h2>
+            </md-card-content>
+          </md-card>
+          <!-- <md-grid-tile-footer><h3>{{tile.title}}</h3></md-grid-tile-footer> -->
         </md-grid-tile>
       </md-grid-list>
     </div>

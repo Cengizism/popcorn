@@ -6,26 +6,24 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($scope) {
-    $scope.imagePath = '/assets/images/madmax.jpg';
-  }
-})();
-
-
-
-angular
-  .module('popcorn')
-  .controller('gridListDemoCtrl', function($scope, $log) {
-    this.tiles = buildGridModel({
-            title: "Svg-",
-            background: ""
+  function MainController($scope, $log) {
+    $scope.tiles = buildGridModel({
+            title: "Tile-",
+            background: ''
           });
+
+    $scope.open = function (tile) {
+      $log.debug(tile);
+    };
+
     function buildGridModel(tileTmpl){
       var it, results = [ ];
-      for (var j=0; j<11; j++) {
+
+      for (var j=0; j<15; j++) {
         it = angular.extend({},tileTmpl);
         it.title = it.title + (j+1);
         it.span  = { row : 1, col : 1 };
+
         switch(j+1) {
           case 1:
             it.background = "red";
@@ -47,10 +45,15 @@ angular
           case 9: it.background = "deepBlue";      break;
           case 10: it.background = "lightPurple";  break;
           case 11: it.background = "yellow";       break;
+          case 12: it.background = "pink";          break;
+          case 13: it.background = "darkBlue";      break;
+          case 14: it.background = "purple";        break;
+          case 15: it.background = "deepBlue";      break;
         }
+
         results.push(it);
       }
-      $log.debug('results:', results);
       return results;
     }
-  });
+  }
+})();

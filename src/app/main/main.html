@@ -4,7 +4,7 @@
       <acme-navbar />
     </header>
     <div flex>
-      <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter="12px" md-gutter-gt-sm="6px" >
+      <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter="12px" md-gutter-gt-sm="6px">
         <md-grid-tile ng-repeat="tile in tiles" md-rowspan="{{tile.span.row}}" md-colspan="{{tile.span.col}}" md-colspan-sm="1" ng-click="open(tile)">
           <figure>
             <img ng-src="{{tile.poster}}" class="md-card-image" alt="{{tile.title}}">

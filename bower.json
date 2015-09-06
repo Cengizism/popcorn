@@ -2,11 +2,12 @@
   "name": "lastFm",
   "version": "0.0.0",
   "dependencies": {
-    "jquery": "~2.1.4",
-    "angular-route": "~1.4.0",
+    "angular": "~1.4.0",
     "angular-material": "~0.9.7",
+    "angular-route": "~1.4.0",
     "animate.css": "~3.3.0",
-    "angular": "~1.4.0"
+    "jquery": "~2.1.4",
+    "rx-angular": "angular-rx#~0.0.14"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0"

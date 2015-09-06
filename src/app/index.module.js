@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('popcorn', ['ngRoute', 'ngMaterial']);
+    .module('popcorn', ['ngRoute', 'ngMaterial', 'rx']);
 
 })();

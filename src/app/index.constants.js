@@ -3,6 +3,9 @@
   'use strict';
 
   angular
-    .module('popcorn');
+    .module('popcorn')
+    .constant('Config', {
+      api_key: 'c8806e55322afd9062df9442a5feffec'
+    });
 
 })();

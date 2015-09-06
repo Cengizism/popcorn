@@ -22,7 +22,6 @@
 
     /** @ngInject */
     function NavbarController() {
-      var vm = this;
     }
   }
 
